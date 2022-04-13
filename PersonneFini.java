@@ -54,9 +54,13 @@ public class PersonneFini {
         } while(reponse == 1);
 
 
-        for(int i=0;  i<j; i++){
-            tab.get(i).afficher();
+        // for(int i=0;  i<j; i++){
+        //     tab.get(i).afficher();
+        // }
+        for(PersonnePlus i: tab){
+            i.afficher();
         }
         person.close();
     }
 }
+
